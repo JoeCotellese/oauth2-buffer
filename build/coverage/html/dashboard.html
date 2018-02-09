@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Volumes/Users/jcotellese/git/oauth2-buffer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/Volumes/Users/jcotellese/git/oauth2-buffer</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/FqsenResolver.php.html#17">FqsenResolver</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/BearerAuthorizationTrait.php.html#22">BearerAuthorizationTrait</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/ArrayAccessorTrait.php.html#20">ArrayAccessorTrait</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#18">StreamHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#18">RedirectMiddleware</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#16">CurlFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#22">TypeResolver</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#15">Middleware</a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#167">Assert</a></td><td class="text-right">6%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#25">Client</a></td><td class="text-right">9%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#18">CurlMultiHandler</a></td><td class="text-right">9%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#10">HandlerStack</a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#11">Stream</a></td><td class="text-right">17%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#13">Uri</a></td><td class="text-right">17%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#9">MessageTrait</a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/Proxy.php.html#10">Proxy</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php.html#14">CurlHandler</a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#26">AccessToken</a></td><td class="text-right">31%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#12">Request</a></td><td class="text-right">39%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/Types/Context.php.html#29">Context</a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/RequiredParameterTrait.php.html#22">RequiredParameterTrait</a></td><td class="text-right">62%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#167">Assert</a></td><td class="text-right">52466</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#16">CurlFactory</a></td><td class="text-right">9683</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#18">StreamHandler</a></td><td class="text-right">8372</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#13">Uri</a></td><td class="text-right">5899</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#25">Client</a></td><td class="text-right">3951</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#11">Stream</a></td><td class="text-right">1230</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#18">CurlMultiHandler</a></td><td class="text-right">741</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#22">TypeResolver</a></td><td class="text-right">714</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#18">RedirectMiddleware</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#10">HandlerStack</a></td><td class="text-right">672</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#9">MessageTrait</a></td><td class="text-right">368</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#15">Middleware</a></td><td class="text-right">357</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#26">AccessToken</a></td><td class="text-right">191</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#12">Request</a></td><td class="text-right">118</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/ArrayAccessorTrait.php.html#20">ArrayAccessorTrait</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/FqsenResolver.php.html#17">FqsenResolver</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/Proxy.php.html#10">Proxy</a></td><td class="text-right">21</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/Types/Context.php.html#29">Context</a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php.html#14">CurlHandler</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/RequiredParameterTrait.php.html#22">RequiredParameterTrait</a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#521"><abbr title="Uri::withFragment">withFragment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#89"><abbr title="TypeResolver::resolve">resolve</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#804"><abbr title="AbstractProvider::getAuthorizationHeaders">getAuthorizationHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#972"><abbr title="Assert::throws">throws</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/Exception/IdentityProviderException.php.html#44"><abbr title="IdentityProviderException::getResponseBody">getResponseBody</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#954"><abbr title="Assert::uuid">uuid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#115"><abbr title="AccessToken::isExpirationTimestamp">isExpirationTimestamp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#169"><abbr title="AccessToken::hasExpired">hasExpired</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#185"><abbr title="AccessToken::getValues">getValues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#195"><abbr title="AccessToken::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#206"><abbr title="AccessToken::jsonSerialize">jsonSerialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/FqsenResolver.php.html#22"><abbr title="FqsenResolver::resolve">resolve</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/FqsenResolver.php.html#42"><abbr title="FqsenResolver::isFqsen">isFqsen</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/FqsenResolver.php.html#57"><abbr title="FqsenResolver::resolvePartialStructuralElementName">resolvePartialStructuralElementName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#137"><abbr title="TypeResolver::addKeyword">addKeyword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#1028"><abbr title="Assert::valueToString">valueToString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#162"><abbr title="TypeResolver::isTypedArray">isTypedArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#174"><abbr title="TypeResolver::isKeyword">isKeyword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#186"><abbr title="TypeResolver::isPartialStructuralElementName">isPartialStructuralElementName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#198"><abbr title="TypeResolver::isFqsen">isFqsen</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#210"><abbr title="TypeResolver::isCompoundType">isCompoundType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#222"><abbr title="TypeResolver::isNullableType">isNullableType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#235"><abbr title="TypeResolver::resolveTypedArray">resolveTypedArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#247"><abbr title="TypeResolver::resolveKeyword">resolveKeyword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#262"><abbr title="TypeResolver::resolveTypedObject">resolveTypedObject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#275"><abbr title="TypeResolver::resolveCompoundType">resolveCompoundType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#294"><abbr title="TypeResolver::resolveNullableType">resolveNullableType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/Types/Context.php.html#69"><abbr title="Context::getNamespace">getNamespace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#763"><abbr title="AbstractProvider::fetchResourceOwnerDetails">fetchResourceOwnerDetails</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#1066"><abbr title="Assert::strlen">strlen</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#185"><abbr title="Assert::integer">integer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#67"><abbr title="MessageTrait::withHeader">withHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#397"><abbr title="Uri::getUserInfo">getUserInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#412"><abbr title="Uri::getPath">getPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#417"><abbr title="Uri::getQuery">getQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#422"><abbr title="Uri::getFragment">getFragment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#427"><abbr title="Uri::withScheme">withScheme</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#443"><abbr title="Uri::withUserInfo">withUserInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#461"><abbr title="Uri::withHost">withHost</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#476"><abbr title="Uri::withPort">withPort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#492"><abbr title="Uri::withPath">withPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#507"><abbr title="Uri::withQuery">withQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#78"><abbr title="Client::__call">__call</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#86"><abbr title="MessageTrait::withAddedHeader">withAddedHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#62"><abbr title="MessageTrait::getHeaderLine">getHeaderLine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#1084"><abbr title="Assert::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#607"><abbr title="Uri::filterPort">filterPort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#49"><abbr title="MessageTrait::getHeader">getHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#661"><abbr title="Uri::filterQueryAndFragment">filterQueryAndFragment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#674"><abbr title="Uri::rawurlencodeMatchZero">rawurlencodeMatchZero</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#679"><abbr title="Uri::validateState">validateState</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Grant/AbstractGrant.php.html#56"><abbr title="AbstractGrant::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#39"><abbr title="MessageTrait::getHeaders">getHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#168"><abbr title="AbstractProvider::getGrantFactory">getGrantFactory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#366"><abbr title="AbstractProvider::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#426"><abbr title="AbstractProvider::getAccessTokenQuery">getAccessTokenQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#28"><abbr title="MessageTrait::withProtocolVersion">withProtocolVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#23"><abbr title="MessageTrait::getProtocolVersion">getProtocolVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#557"><abbr title="AbstractProvider::getAuthenticatedRequest">getAuthenticatedRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/Types/Context.php.html#80"><abbr title="Context::getNamespaceAliases">getNamespaceAliases</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#195"><abbr title="Assert::integerish">integerish</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#899"><abbr title="Assert::keyNotExists">keyNotExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#725"><abbr title="Assert::minLength">minLength</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#567"><abbr title="Assert::notContains">notContains</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#578"><abbr title="Assert::notWhitespaceOnly">notWhitespaceOnly</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#588"><abbr title="Assert::startsWith">startsWith</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#599"><abbr title="Assert::startsWithLetter">startsWithLetter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#618"><abbr title="Assert::endsWith">endsWith</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#629"><abbr title="Assert::regex">regex</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#639"><abbr title="Assert::alpha">alpha</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#654"><abbr title="Assert::digits">digits</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#669"><abbr title="Assert::alnum">alnum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#684"><abbr title="Assert::lower">lower</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#699"><abbr title="Assert::upper">upper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#714"><abbr title="Assert::length">length</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#736"><abbr title="Assert::maxLength">maxLength</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#545"><abbr title="Assert::oneOf">oneOf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#747"><abbr title="Assert::lengthBetween">lengthBetween</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#761"><abbr title="Assert::fileExists">fileExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#773"><abbr title="Assert::file">file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#785"><abbr title="Assert::directory">directory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#797"><abbr title="Assert::readable">readable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#807"><abbr title="Assert::writable">writable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#817"><abbr title="Assert::classExists">classExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#827"><abbr title="Assert::subclassOf">subclassOf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#838"><abbr title="Assert::implementsInterface">implementsInterface</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#849"><abbr title="Assert::propertyExists">propertyExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#859"><abbr title="Assert::propertyNotExists">propertyNotExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#869"><abbr title="Assert::methodExists">methodExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#879"><abbr title="Assert::methodNotExists">methodNotExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#556"><abbr title="Assert::contains">contains</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#533"><abbr title="Assert::range">range</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#205"><abbr title="Assert::float">float</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#362"><abbr title="Assert::notInstanceOf">notInstanceOf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#215"><abbr title="Assert::numeric">numeric</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#225"><abbr title="Assert::natural">natural</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#940"><abbr title="Assert::countBetween">countBetween</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#245"><abbr title="Assert::scalar">scalar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#255"><abbr title="Assert::object">object</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#265"><abbr title="Assert::resource">resource</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#283"><abbr title="Assert::isCallable">isCallable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#293"><abbr title="Assert::isArray">isArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#303"><abbr title="Assert::isTraversable">isTraversable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#321"><abbr title="Assert::isArrayAccessible">isArrayAccessible</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#331"><abbr title="Assert::isCountable">isCountable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#929"><abbr title="Assert::maxCount">maxCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#373"><abbr title="Assert::isInstanceOfAny">isInstanceOfAny</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#522"><abbr title="Assert::lessThanEq">lessThanEq</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#388"><abbr title="Assert::isEmpty">isEmpty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#398"><abbr title="Assert::notEmpty">notEmpty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#408"><abbr title="Assert::null">null</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#918"><abbr title="Assert::minCount">minCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#427"><abbr title="Assert::true">true</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#437"><abbr title="Assert::false">false</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#447"><abbr title="Assert::eq">eq</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#909"><abbr title="Assert::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#468"><abbr title="Assert::same">same</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#479"><abbr title="Assert::notSame">notSame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#489"><abbr title="Assert::greaterThan">greaterThan</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#500"><abbr title="Assert::greaterThanEq">greaterThanEq</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#511"><abbr title="Assert::lessThan">lessThan</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#383"><abbr title="Uri::getAuthority">getAuthority</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#378"><abbr title="Uri::getScheme">getScheme</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#369"><abbr title="Uri::fromParts">fromParts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#526"><abbr title="StreamHandler::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#114"><abbr title="CurlMultiHandler::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#127"><abbr title="CurlMultiHandler::addRequest">addRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#146"><abbr title="CurlMultiHandler::cancel">cancel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#161"><abbr title="CurlMultiHandler::processMessages">processMessages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#185"><abbr title="CurlMultiHandler::timeToNext">timeToNext</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#30"><abbr title="StreamHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#74"><abbr title="StreamHandler::invokeStats">invokeStats</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#93"><abbr title="StreamHandler::createResponse">createResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#141"><abbr title="StreamHandler::createSink">createSink</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#156"><abbr title="StreamHandler::checkDecode">checkDecode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#201"><abbr title="StreamHandler::drain">drain</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#230"><abbr title="StreamHandler::createResource">createResource</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#258"><abbr title="StreamHandler::createStream">createStream</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#61"><abbr title="CurlMultiHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#339"><abbr title="StreamHandler::resolveHost">resolveHost</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#362"><abbr title="StreamHandler::getDefaultContext">getDefaultContext</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#396"><abbr title="StreamHandler::add_proxy">add_proxy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#415"><abbr title="StreamHandler::add_timeout">add_timeout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#422"><abbr title="StreamHandler::add_verify">add_verify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#448"><abbr title="StreamHandler::add_cert">add_cert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#462"><abbr title="StreamHandler::add_progress">add_progress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#474"><abbr title="StreamHandler::add_debug">add_debug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#511"><abbr title="StreamHandler::addNotification">addNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#63"><abbr title="HandlerStack::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#75"><abbr title="HandlerStack::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#105"><abbr title="HandlerStack::setHandler">setHandler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#79"><abbr title="CurlMultiHandler::tick">tick</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/ArrayAccessorTrait.php.html#30"><abbr title="ArrayAccessorTrait::getValueByKey">getValueByKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#332"><abbr title="Uri::withQueryValue">withQueryValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#62"><abbr title="CurlFactory::release">release</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#92"><abbr title="Client::sendAsync">sendAsync</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#103"><abbr title="Client::send">send</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#109"><abbr title="Client::requestAsync">requestAsync</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#128"><abbr title="Client::request">request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#134"><abbr title="Client::getConfig">getConfig</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#141"><abbr title="Client::buildUri">buildUri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/BearerAuthorizationTrait.php.html#30"><abbr title="BearerAuthorizationTrait::getAuthorizationHeaders">getAuthorizationHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#213"><abbr title="Client::prepareDefaults">prepareDefaults</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#259"><abbr title="Client::transfer">transfer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#291"><abbr title="Client::applyOptions">applyOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#406"><abbr title="Client::invalidBody">invalidBody</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#32"><abbr title="CurlFactory::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#93"><abbr title="CurlFactory::finish">finish</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#44"><abbr title="CurlMultiHandler::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#118"><abbr title="CurlFactory::invokeStats">invokeStats</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#131"><abbr title="CurlFactory::finishError">finishError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#153"><abbr title="CurlFactory::createRejection">createRejection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#192"><abbr title="CurlFactory::getDefaultConf">getDefaultConf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#219"><abbr title="CurlFactory::applyMethod">applyMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#246"><abbr title="CurlFactory::applyBody">applyBody</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#531"><abbr title="CurlFactory::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#287"><abbr title="CurlFactory::applyHeaders">applyHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#307"><abbr title="CurlFactory::removeHeader">removeHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#317"><abbr title="CurlFactory::applyHandlerOptions">applyHandlerOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#482"><abbr title="CurlFactory::retryFailedRewind">retryFailedRewind</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#519"><abbr title="CurlFactory::createHeaderFn">createHeaderFn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php.html#33"><abbr title="CurlHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#116"><abbr title="HandlerStack::hasHandler">hasHandler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#127"><abbr title="HandlerStack::unshift">unshift</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#152"><abbr title="HandlerStack::before">before</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#190"><abbr title="Stream::rewind">rewind</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#104"><abbr title="Request::withUri">withUri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#73"><abbr title="Stream::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#85"><abbr title="Stream::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#90"><abbr title="Stream::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#100"><abbr title="Stream::getContents">getContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#111"><abbr title="Stream::close">close</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#121"><abbr title="Stream::detach">detach</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#135"><abbr title="Stream::getSize">getSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#159"><abbr title="Stream::isReadable">isReadable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#164"><abbr title="Stream::isWritable">isWritable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#169"><abbr title="Stream::isSeekable">isSeekable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#174"><abbr title="Stream::eof">eof</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#179"><abbr title="Stream::tell">tell</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#195"><abbr title="Stream::seek">seek</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#92"><abbr title="Request::withMethod">withMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#205"><abbr title="Stream::read">read</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#226"><abbr title="Stream::write">write</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#107"><abbr title="MessageTrait::withoutHeader">withoutHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#77"><abbr title="Uri::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#114"><abbr title="Uri::composeComponents">composeComponents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#150"><abbr title="Uri::isDefaultPort">isDefaultPort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#174"><abbr title="Uri::isAbsolute">isAbsolute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#189"><abbr title="Uri::isNetworkPathReference">isNetworkPathReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#204"><abbr title="Uri::isAbsolutePathReference">isAbsolutePathReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#222"><abbr title="Uri::isRelativePathReference">isRelativePathReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#242"><abbr title="Uri::isSameDocumentReference">isSameDocumentReference</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#302"><abbr title="Uri::withoutQueryValue">withoutQueryValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#340"><abbr title="Uri::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#99"><abbr title="Request::getUri">getUri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#889"><abbr title="Assert::keyExists">keyExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#164"><abbr title="HandlerStack::after">after</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#174"><abbr title="HandlerStack::remove">remove</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#191"><abbr title="HandlerStack::resolve">resolve</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#212"><abbr title="HandlerStack::findByName">findByName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#231"><abbr title="HandlerStack::splice">splice</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#259"><abbr title="HandlerStack::debugCallable">debugCallable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#249"><abbr title="Middleware::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#80"><abbr title="Middleware::history">history</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#125"><abbr title="Middleware::tap">tap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#132"><abbr title="MessageTrait::withBody">withBody</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#168"><abbr title="Middleware::retry">retry</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#185"><abbr title="Middleware::log">log</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#87"><abbr title="Request::getMethod">getMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#123"><abbr title="MessageTrait::getBody">getBody</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#229"><abbr title="Middleware::mapRequest">mapRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#38"><abbr title="RedirectMiddleware::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#49"><abbr title="RedirectMiddleware::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#124"><abbr title="RedirectMiddleware::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#83"><abbr title="RedirectMiddleware::checkRedirect">checkRedirect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#121"><abbr title="RedirectMiddleware::withTracking">withTracking</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#138"><abbr title="RedirectMiddleware::guardMax">guardMax</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#161"><abbr title="RedirectMiddleware::modifyRequest">modifyRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#212"><abbr title="RedirectMiddleware::redirectUri">redirectUri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#57"><abbr title="Request::getRequestTarget">getRequestTarget</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#74"><abbr title="Request::withRequestTarget">withRequestTarget</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#180"><abbr title="HandlerStack::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#25"><abbr title="Middleware::cookies">cookies</abbr></a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#52"><abbr title="Middleware::httpErrors">httpErrors</abbr></a></td><td class="text-right">10%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/Proxy.php.html#49"><abbr title="Proxy::anonymous function">anonymous function</abbr></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/Proxy.php.html#21"><abbr title="Proxy::wrapSync">wrapSync</abbr></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#657"><abbr title="AbstractProvider::parseResponse">parseResponse</abbr></a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#351"><abbr title="Assert::isInstanceOf">isInstanceOf</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/RequiredParameterTrait.php.html#32"><abbr title="RequiredParameterTrait::checkRequiredParameter">checkRequiredParameter</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#458"><abbr title="Assert::notEq">notEq</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Grant/GrantFactory.php.html#95"><abbr title="GrantFactory::checkGrant">checkGrant</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#341"><abbr title="Assert::isIterable">isIterable</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#235"><abbr title="Assert::boolean">boolean</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#817"><abbr title="AbstractProvider::getHeaders">getHeaders</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#708"><abbr title="AbstractProvider::prepareAccessTokenResponse">prepareAccessTokenResponse</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#60"><abbr title="AccessToken::__construct">__construct</abbr></a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#158"><abbr title="Client::configureDefaults">configureDefaults</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#53"><abbr title="CurlMultiHandler::__destruct">__destruct</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#146"><abbr title="Middleware::redirect">redirect</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#214"><abbr title="Middleware::prepareBody">prepareBody</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#438"><abbr title="AbstractProvider::verifyGrant">verifyGrant</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#625"><abbr title="AbstractProvider::parseJson">parseJson</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#418"><abbr title="Assert::notNull">notNull</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#454"><abbr title="AbstractProvider::getAccessTokenUrl">getAccessTokenUrl</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#243"><abbr title="Stream::getMetadata">getMetadata</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#62"><abbr title="Client::__construct">__construct</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#999"><abbr title="Assert::__callStatic">__callStatic</abbr></a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#623"><abbr title="Uri::removeDefaultPort">removeDefaultPort</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#591"><abbr title="Uri::filterHost">filterHost</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#575"><abbr title="Uri::filterScheme">filterScheme</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#603"><abbr title="AbstractProvider::getParsedResponse">getParsedResponse</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#540"><abbr title="Uri::applyParts">applyParts</abbr></a></td><td class="text-right">69%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#317"><abbr title="CurlFactory::applyHandlerOptions">applyHandlerOptions</abbr></a></td><td class="text-right">1260</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#291"><abbr title="Client::applyOptions">applyOptions</abbr></a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#258"><abbr title="StreamHandler::createStream">createStream</abbr></a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#89"><abbr title="TypeResolver::resolve">resolve</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#679"><abbr title="Uri::validateState">validateState</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#30"><abbr title="StreamHandler::__invoke">__invoke</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/ArrayAccessorTrait.php.html#30"><abbr title="ArrayAccessorTrait::getValueByKey">getValueByKey</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#246"><abbr title="CurlFactory::applyBody">applyBody</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#161"><abbr title="RedirectMiddleware::modifyRequest">modifyRequest</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#1028"><abbr title="Assert::valueToString">valueToString</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#242"><abbr title="Uri::isSameDocumentReference">isSameDocumentReference</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#79"><abbr title="CurlMultiHandler::tick">tick</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#219"><abbr title="CurlFactory::applyMethod">applyMethod</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#519"><abbr title="CurlFactory::createHeaderFn">createHeaderFn</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#156"><abbr title="StreamHandler::checkDecode">checkDecode</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#339"><abbr title="StreamHandler::resolveHost">resolveHost</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#213"><abbr title="Client::prepareDefaults">prepareDefaults</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#422"><abbr title="StreamHandler::add_verify">add_verify</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#114"><abbr title="Uri::composeComponents">composeComponents</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#265"><abbr title="Assert::resource">resource</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#93"><abbr title="StreamHandler::createResponse">createResponse</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#972"><abbr title="Assert::throws">throws</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#482"><abbr title="CurlFactory::retryFailedRewind">retryFailedRewind</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#83"><abbr title="RedirectMiddleware::checkRedirect">checkRedirect</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#362"><abbr title="StreamHandler::getDefaultContext">getDefaultContext</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#93"><abbr title="CurlFactory::finish">finish</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#141"><abbr title="Client::buildUri">buildUri</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#205"><abbr title="Stream::read">read</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#49"><abbr title="RedirectMiddleware::__invoke">__invoke</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#396"><abbr title="StreamHandler::add_proxy">add_proxy</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#109"><abbr title="Client::requestAsync">requestAsync</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#114"><abbr title="CurlMultiHandler::execute">execute</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#531"><abbr title="CurlFactory::anonymous function">anonymous function</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#135"><abbr title="Stream::getSize">getSize</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#206"><abbr title="AccessToken::jsonSerialize">jsonSerialize</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#158"><abbr title="Client::configureDefaults">configureDefaults</abbr></a></td><td class="text-right">22</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#60"><abbr title="AccessToken::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#57"><abbr title="Request::getRequestTarget">getRequestTarget</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#259"><abbr title="HandlerStack::debugCallable">debugCallable</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#231"><abbr title="HandlerStack::splice">splice</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#191"><abbr title="HandlerStack::resolve">resolve</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#225"><abbr title="Assert::natural">natural</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#75"><abbr title="HandlerStack::__toString">__toString</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#747"><abbr title="Assert::lengthBetween">lengthBetween</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#204"><abbr title="Uri::isAbsolutePathReference">isAbsolutePathReference</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#195"><abbr title="Assert::integerish">integerish</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#259"><abbr title="Client::transfer">transfer</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#78"><abbr title="Client::__call">__call</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#331"><abbr title="Assert::isCountable">isCountable</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#954"><abbr title="Assert::uuid">uuid</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#940"><abbr title="Assert::countBetween">countBetween</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#287"><abbr title="CurlFactory::applyHeaders">applyHeaders</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#599"><abbr title="Assert::startsWithLetter">startsWithLetter</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#192"><abbr title="CurlFactory::getDefaultConf">getDefaultConf</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#373"><abbr title="Assert::isInstanceOfAny">isInstanceOfAny</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#222"><abbr title="Uri::isRelativePathReference">isRelativePathReference</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#533"><abbr title="Assert::range">range</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#607"><abbr title="Uri::filterPort">filterPort</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#321"><abbr title="Assert::isArrayAccessible">isArrayAccessible</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#141"><abbr title="StreamHandler::createSink">createSink</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#131"><abbr title="CurlFactory::finishError">finishError</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#303"><abbr title="Assert::isTraversable">isTraversable</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#230"><abbr title="StreamHandler::createResource">createResource</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#32"><abbr title="CurlFactory::create">create</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#657"><abbr title="AbstractProvider::parseResponse">parseResponse</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#67"><abbr title="MessageTrait::withHeader">withHeader</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#578"><abbr title="Assert::notWhitespaceOnly">notWhitespaceOnly</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#588"><abbr title="Assert::startsWith">startsWith</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#545"><abbr title="Assert::oneOf">oneOf</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#618"><abbr title="Assert::endsWith">endsWith</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#86"><abbr title="MessageTrait::withAddedHeader">withAddedHeader</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#567"><abbr title="Assert::notContains">notContains</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#556"><abbr title="Assert::contains">contains</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#437"><abbr title="Assert::false">false</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#1066"><abbr title="Assert::strlen">strlen</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#255"><abbr title="Assert::object">object</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#427"><abbr title="Assert::true">true</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#468"><abbr title="Assert::same">same</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#408"><abbr title="Assert::null">null</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#398"><abbr title="Assert::notEmpty">notEmpty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#388"><abbr title="Assert::isEmpty">isEmpty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#362"><abbr title="Assert::notInstanceOf">notInstanceOf</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#479"><abbr title="Assert::notSame">notSame</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#293"><abbr title="Assert::isArray">isArray</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#283"><abbr title="Assert::isCallable">isCallable</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#245"><abbr title="Assert::scalar">scalar</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#522"><abbr title="Assert::lessThanEq">lessThanEq</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#489"><abbr title="Assert::greaterThan">greaterThan</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#215"><abbr title="Assert::numeric">numeric</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#205"><abbr title="Assert::float">float</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#185"><abbr title="Assert::integer">integer</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#500"><abbr title="Assert::greaterThanEq">greaterThanEq</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#511"><abbr title="Assert::lessThan">lessThan</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#137"><abbr title="TypeResolver::addKeyword">addKeyword</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/FqsenResolver.php.html#57"><abbr title="FqsenResolver::resolvePartialStructuralElementName">resolvePartialStructuralElementName</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/FqsenResolver.php.html#22"><abbr title="FqsenResolver::resolve">resolve</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#629"><abbr title="Assert::regex">regex</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#111"><abbr title="Stream::close">close</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#639"><abbr title="Assert::alpha">alpha</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#879"><abbr title="Assert::methodNotExists">methodNotExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#80"><abbr title="Middleware::history">history</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#212"><abbr title="HandlerStack::findByName">findByName</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#838"><abbr title="Assert::implementsInterface">implementsInterface</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#849"><abbr title="Assert::propertyExists">propertyExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#474"><abbr title="StreamHandler::add_debug">add_debug</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#859"><abbr title="Assert::propertyNotExists">propertyNotExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#448"><abbr title="StreamHandler::add_cert">add_cert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#869"><abbr title="Assert::methodExists">methodExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#201"><abbr title="StreamHandler::drain">drain</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#138"><abbr title="RedirectMiddleware::guardMax">guardMax</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#889"><abbr title="Assert::keyExists">keyExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#899"><abbr title="Assert::keyNotExists">keyNotExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#185"><abbr title="CurlMultiHandler::timeToNext">timeToNext</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#161"><abbr title="CurlMultiHandler::processMessages">processMessages</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#918"><abbr title="Assert::minCount">minCount</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#929"><abbr title="Assert::maxCount">maxCount</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#307"><abbr title="CurlFactory::removeHeader">removeHeader</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#153"><abbr title="CurlFactory::createRejection">createRejection</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#134"><abbr title="Client::getConfig">getConfig</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#125"><abbr title="Middleware::tap">tap</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#827"><abbr title="Assert::subclassOf">subclassOf</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#817"><abbr title="Assert::classExists">classExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#226"><abbr title="Stream::write">write</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#699"><abbr title="Assert::upper">upper</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#383"><abbr title="Uri::getAuthority">getAuthority</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#332"><abbr title="Uri::withQueryValue">withQueryValue</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#669"><abbr title="Assert::alnum">alnum</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#654"><abbr title="Assert::digits">digits</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#714"><abbr title="Assert::length">length</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#725"><abbr title="Assert::minLength">minLength</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#150"><abbr title="Uri::isDefaultPort">isDefaultPort</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#807"><abbr title="Assert::writable">writable</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#195"><abbr title="Stream::seek">seek</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#684"><abbr title="Assert::lower">lower</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#736"><abbr title="Assert::maxLength">maxLength</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#761"><abbr title="Assert::fileExists">fileExists</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#447"><abbr title="Assert::eq">eq</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#773"><abbr title="Assert::file">file</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#785"><abbr title="Assert::directory">directory</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#797"><abbr title="Assert::readable">readable</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#104"><abbr title="Request::withUri">withUri</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#443"><abbr title="Uri::withUserInfo">withUserInfo</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#540"><abbr title="Uri::applyParts">applyParts</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#25"><abbr title="Middleware::cookies">cookies</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#52"><abbr title="Middleware::httpErrors">httpErrors</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#243"><abbr title="Stream::getMetadata">getMetadata</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#341"><abbr title="Assert::isIterable">isIterable</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#999"><abbr title="Assert::__callStatic">__callStatic</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#909"><abbr title="Assert::count">count</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#521"><abbr title="Uri::withFragment">withFragment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#179"><abbr title="Stream::tell">tell</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Request.php.html#74"><abbr title="Request::withRequestTarget">withRequestTarget</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#189"><abbr title="Uri::isNetworkPathReference">isNetworkPathReference</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#44"><abbr title="CurlMultiHandler::__get">__get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#174"><abbr title="Stream::eof">eof</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#121"><abbr title="Stream::detach">detach</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#100"><abbr title="Stream::getContents">getContents</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#90"><abbr title="Stream::__toString">__toString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Stream.php.html#73"><abbr title="Stream::__get">__get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php.html#212"><abbr title="RedirectMiddleware::redirectUri">redirectUri</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#427"><abbr title="Uri::withScheme">withScheme</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Middleware.php.html#185"><abbr title="Middleware::log">log</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/HandlerStack.php.html#174"><abbr title="HandlerStack::remove">remove</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#511"><abbr title="StreamHandler::addNotification">addNotification</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#462"><abbr title="StreamHandler::add_progress">add_progress</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#415"><abbr title="StreamHandler::add_timeout">add_timeout</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#526"><abbr title="StreamHandler::anonymous function">anonymous function</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php.html#74"><abbr title="StreamHandler::invokeStats">invokeStats</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#302"><abbr title="Uri::withoutQueryValue">withoutQueryValue</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#461"><abbr title="Uri::withHost">withHost</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#146"><abbr title="CurlMultiHandler::cancel">cancel</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#49"><abbr title="MessageTrait::getHeader">getHeader</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php.html#62"><abbr title="CurlFactory::release">release</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#275"><abbr title="TypeResolver::resolveCompoundType">resolveCompoundType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/phpdocumentor/type-resolver/src/TypeResolver.php.html#186"><abbr title="TypeResolver::isPartialStructuralElementName">isPartialStructuralElementName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Token/AccessToken.php.html#169"><abbr title="AccessToken::hasExpired">hasExpired</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#763"><abbr title="AbstractProvider::fetchResourceOwnerDetails">fetchResourceOwnerDetails</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#28"><abbr title="MessageTrait::withProtocolVersion">withProtocolVersion</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#107"><abbr title="MessageTrait::withoutHeader">withoutHeader</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#476"><abbr title="Uri::withPort">withPort</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#366"><abbr title="AbstractProvider::authorize">authorize</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php.html#33"><abbr title="CurlHandler::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#661"><abbr title="Uri::filterQueryAndFragment">filterQueryAndFragment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#123"><abbr title="MessageTrait::getBody">getBody</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/MessageTrait.php.html#132"><abbr title="MessageTrait::withBody">withBody</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#507"><abbr title="Uri::withQuery">withQuery</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#492"><abbr title="Uri::withPath">withPath</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#127"><abbr title="CurlMultiHandler::addRequest">addRequest</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#351"><abbr title="Assert::isInstanceOf">isInstanceOf</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#458"><abbr title="Assert::notEq">notEq</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Grant/GrantFactory.php.html#95"><abbr title="GrantFactory::checkGrant">checkGrant</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#235"><abbr title="Assert::boolean">boolean</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Client.php.html#62"><abbr title="Client::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="vendor/webmozart/assert/src/Assert.php.html#418"><abbr title="Assert::notNull">notNull</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/Proxy.php.html#21"><abbr title="Proxy::wrapSync">wrapSync</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/Proxy.php.html#49"><abbr title="Proxy::anonymous function">anonymous function</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#623"><abbr title="Uri::removeDefaultPort">removeDefaultPort</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#817"><abbr title="AbstractProvider::getHeaders">getHeaders</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#708"><abbr title="AbstractProvider::prepareAccessTokenResponse">prepareAccessTokenResponse</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Tool/RequiredParameterTrait.php.html#32"><abbr title="RequiredParameterTrait::checkRequiredParameter">checkRequiredParameter</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#625"><abbr title="AbstractProvider::parseJson">parseJson</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#438"><abbr title="AbstractProvider::verifyGrant">verifyGrant</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php.html#53"><abbr title="CurlMultiHandler::__destruct">__destruct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#454"><abbr title="AbstractProvider::getAccessTokenUrl">getAccessTokenUrl</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/league/oauth2-client/src/Provider/AbstractProvider.php.html#603"><abbr title="AbstractProvider::getParsedResponse">getParsedResponse</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#591"><abbr title="Uri::filterHost">filterHost</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="vendor/guzzlehttp/psr7/src/Uri.php.html#575"><abbr title="Uri::filterScheme">filterScheme</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.27</a> and <a href="https://phpunit.de/">PHPUnit 4.8.36</a> at Fri Feb 9 21:52:35 UTC 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.min.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([5,6,3,2,3,0,0,2,2,2,1,6], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([242,1,1,3,1,8,7,9,5,5,1,87], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,9,"<a href=\"src\/Provider\/Buffer.php.html#11\">Buffer<\/a>"],[100,4,"<a href=\"src\/Provider\/BufferUser.php.html#7\">BufferUser<\/a>"],[100,0,"<a href=\"src\/Provider\/Exception\/BufferProviderException.php.html#7\">BufferProviderException<\/a>"],[9.2105263157895,72,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#25\">Client<\/a>"],[0.74349442379182,99,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#16\">CurlFactory<\/a>"],[30,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlHandler.php.html#14\">CurlHandler<\/a>"],[9.5890410958904,31,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#18\">CurlMultiHandler<\/a>"],[25,6,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/Proxy.php.html#10\">Proxy<\/a>"],[0,91,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#18\">StreamHandler<\/a>"],[14.473684210526,32,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#10\">HandlerStack<\/a>"],[5.4794520547945,20,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#15\">Middleware<\/a>"],[0,26,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#18\">RedirectMiddleware<\/a>"],[39.583333333333,21,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#12\">Request<\/a>"],[17.582417582418,46,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#11\">Stream<\/a>"],[17.708333333333,102,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#13\">Uri<\/a>"],[83.333333333333,4,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AbstractGrant.php.html#31\">AbstractGrant<\/a>"],[100,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AuthorizationCode.php.html#22\">AuthorizationCode<\/a>"],[80,8,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php.html#22\">GrantFactory<\/a>"],[71.034482758621,71,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#36\">AbstractProvider<\/a>"],[75,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/Exception\/IdentityProviderException.php.html#20\">IdentityProviderException<\/a>"],[31.707317073171,23,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#26\">AccessToken<\/a>"],[100,3,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/RequestFactory.php.html#24\">RequestFactory<\/a>"],[0,7,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/FqsenResolver.php.html#17\">FqsenResolver<\/a>"],[4.3478260869565,28,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#22\">TypeResolver<\/a>"],[61.538461538462,8,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/Context.php.html#29\">Context<\/a>"],[97.101449275362,37,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/ContextFactory.php.html#24\">ContextFactory<\/a>"],[6.0669456066946,251,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#167\">Assert<\/a>"],[20.3125,26,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#9\">MessageTrait<\/a>"],[0,9,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/ArrayAccessorTrait.php.html#20\">ArrayAccessorTrait<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/BearerAuthorizationTrait.php.html#22\">BearerAuthorizationTrait<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/QueryBuilderTrait.php.html#20\">QueryBuilderTrait<\/a>"],[62.5,4,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/RequiredParameterTrait.php.html#22\">RequiredParameterTrait<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"src\/Provider\/Buffer.php.html#39\">Buffer::getBaseAuthorizationUrl<\/a>"],[100,1,"<a href=\"src\/Provider\/Buffer.php.html#47\">Buffer::getBaseAccessTokenUrl<\/a>"],[100,1,"<a href=\"src\/Provider\/Buffer.php.html#55\">Buffer::getResourceOwnerDetailsUrl<\/a>"],[100,1,"<a href=\"src\/Provider\/Buffer.php.html#65\">Buffer::getApiUrl<\/a>"],[100,1,"<a href=\"src\/Provider\/Buffer.php.html#73\">Buffer::getDefaultScopes<\/a>"],[100,3,"<a href=\"src\/Provider\/Buffer.php.html#81\">Buffer::checkResponse<\/a>"],[100,1,"<a href=\"src\/Provider\/Buffer.php.html#95\">Buffer::createResourceOwner<\/a>"],[100,1,"<a href=\"src\/Provider\/BufferUser.php.html#25\">BufferUser::__construct<\/a>"],[100,1,"<a href=\"src\/Provider\/BufferUser.php.html#35\">BufferUser::getId<\/a>"],[100,1,"<a href=\"src\/Provider\/BufferUser.php.html#45\">BufferUser::getName<\/a>"],[100,1,"<a href=\"src\/Provider\/BufferUser.php.html#55\">BufferUser::toArray<\/a>"],[62.5,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#62\">Client::__construct<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#78\">Client::__call<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#92\">Client::sendAsync<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#103\">Client::send<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#109\">Client::requestAsync<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#128\">Client::request<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#134\">Client::getConfig<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#141\">Client::buildUri<\/a>"],[50,10,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#158\">Client::configureDefaults<\/a>"],[0,7,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#213\">Client::prepareDefaults<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#259\">Client::transfer<\/a>"],[0,26,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#291\">Client::applyOptions<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Client.php.html#406\">Client::invalidBody<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#27\">CurlFactory::__construct<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#32\">CurlFactory::create<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#62\">CurlFactory::release<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#93\">CurlFactory::finish<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#118\">CurlFactory::invokeStats<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#131\">CurlFactory::finishError<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#153\">CurlFactory::createRejection<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#192\">CurlFactory::getDefaultConf<\/a>"],[0,7,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#219\">CurlFactory::applyMethod<\/a>"],[0,9,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#246\">CurlFactory::applyBody<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#531\">CurlFactory::anonymous function<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#287\">CurlFactory::applyHeaders<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#307\">CurlFactory::removeHeader<\/a>"],[0,35,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#317\">CurlFactory::applyHandlerOptions<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#482\">CurlFactory::retryFailedRewind<\/a>"],[0,7,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php.html#519\">CurlFactory::createHeaderFn<\/a>"],[75,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlHandler.php.html#26\">CurlHandler::__construct<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlHandler.php.html#33\">CurlHandler::__invoke<\/a>"],[100,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#36\">CurlMultiHandler::__construct<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#44\">CurlMultiHandler::__get<\/a>"],[50,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#53\">CurlMultiHandler::__destruct<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#61\">CurlMultiHandler::__invoke<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#68\">CurlMultiHandler::anonymous function<\/a>"],[0,7,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#79\">CurlMultiHandler::tick<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#114\">CurlMultiHandler::execute<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#127\">CurlMultiHandler::addRequest<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#146\">CurlMultiHandler::cancel<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#161\">CurlMultiHandler::processMessages<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php.html#185\">CurlMultiHandler::timeToNext<\/a>"],[25,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/Proxy.php.html#21\">Proxy::wrapSync<\/a>"],[25,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/Proxy.php.html#49\">Proxy::anonymous function<\/a>"],[100,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/Proxy.php.html#45\">Proxy::wrapStreaming<\/a>"],[0,9,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#30\">StreamHandler::__invoke<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#74\">StreamHandler::invokeStats<\/a>"],[0,6,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#93\">StreamHandler::createResponse<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#141\">StreamHandler::createSink<\/a>"],[0,7,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#156\">StreamHandler::checkDecode<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#201\">StreamHandler::drain<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#230\">StreamHandler::createResource<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#526\">StreamHandler::anonymous function<\/a>"],[0,17,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#258\">StreamHandler::createStream<\/a>"],[0,7,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#339\">StreamHandler::resolveHost<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#362\">StreamHandler::getDefaultContext<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#396\">StreamHandler::add_proxy<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#415\">StreamHandler::add_timeout<\/a>"],[0,6,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#422\">StreamHandler::add_verify<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#448\">StreamHandler::add_cert<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#462\">StreamHandler::add_progress<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#474\">StreamHandler::add_debug<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#511\">StreamHandler::addNotification<\/a>"],[100,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php.html#524\">StreamHandler::callArray<\/a>"],[100,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#38\">HandlerStack::create<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#52\">HandlerStack::__construct<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#63\">HandlerStack::__invoke<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#75\">HandlerStack::__toString<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#105\">HandlerStack::setHandler<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#116\">HandlerStack::hasHandler<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#127\">HandlerStack::unshift<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#139\">HandlerStack::push<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#152\">HandlerStack::before<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#164\">HandlerStack::after<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#174\">HandlerStack::remove<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#180\">HandlerStack::anonymous function<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#191\">HandlerStack::resolve<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#212\">HandlerStack::findByName<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#231\">HandlerStack::splice<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php.html#259\">HandlerStack::debugCallable<\/a>"],[8.3333333333333,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#25\">Middleware::cookies<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#249\">Middleware::anonymous function<\/a>"],[10,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#52\">Middleware::httpErrors<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#80\">Middleware::history<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#125\">Middleware::tap<\/a>"],[50,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#146\">Middleware::redirect<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#168\">Middleware::retry<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#185\">Middleware::log<\/a>"],[50,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#214\">Middleware::prepareBody<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#229\">Middleware::mapRequest<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/Middleware.php.html#246\">Middleware::mapResponse<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#38\">RedirectMiddleware::__construct<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#49\">RedirectMiddleware::__invoke<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#124\">RedirectMiddleware::anonymous function<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#83\">RedirectMiddleware::checkRedirect<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#121\">RedirectMiddleware::withTracking<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#138\">RedirectMiddleware::guardMax<\/a>"],[0,8,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#161\">RedirectMiddleware::modifyRequest<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php.html#212\">RedirectMiddleware::redirectUri<\/a>"],[100,5,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#32\">Request::__construct<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#57\">Request::getRequestTarget<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#74\">Request::withRequestTarget<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#87\">Request::getMethod<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#92\">Request::withMethod<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#99\">Request::getUri<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#104\">Request::withUri<\/a>"],[72.727272727273,4,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Request.php.html#120\">Request::updateHostFromUri<\/a>"],[78.571428571429,4,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#51\">Stream::__construct<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#73\">Stream::__get<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#85\">Stream::__destruct<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#90\">Stream::__toString<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#100\">Stream::getContents<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#111\">Stream::close<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#121\">Stream::detach<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#135\">Stream::getSize<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#159\">Stream::isReadable<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#164\">Stream::isWritable<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#169\">Stream::isSeekable<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#174\">Stream::eof<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#179\">Stream::tell<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#190\">Stream::rewind<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#195\">Stream::seek<\/a>"],[0,5,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#205\">Stream::read<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#226\">Stream::write<\/a>"],[62.5,6,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Stream.php.html#243\">Stream::getMetadata<\/a>"],[83.333333333333,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#65\">Uri::__construct<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#77\">Uri::__toString<\/a>"],[0,6,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#114\">Uri::composeComponents<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#150\">Uri::isDefaultPort<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#174\">Uri::isAbsolute<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#189\">Uri::isNetworkPathReference<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#204\">Uri::isAbsolutePathReference<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#222\">Uri::isRelativePathReference<\/a>"],[0,8,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#242\">Uri::isSameDocumentReference<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#266\">Uri::removeDotSegments<\/a>"],[100,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#282\">Uri::resolve<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#302\">Uri::withoutQueryValue<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#340\">Uri::anonymous function<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#332\">Uri::withQueryValue<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#369\">Uri::fromParts<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#378\">Uri::getScheme<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#383\">Uri::getAuthority<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#397\">Uri::getUserInfo<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#402\">Uri::getHost<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#407\">Uri::getPort<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#412\">Uri::getPath<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#417\">Uri::getQuery<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#422\">Uri::getFragment<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#427\">Uri::withScheme<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#443\">Uri::withUserInfo<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#461\">Uri::withHost<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#476\">Uri::withPort<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#492\">Uri::withPath<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#507\">Uri::withQuery<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#521\">Uri::withFragment<\/a>"],[69.565217391304,9,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#540\">Uri::applyParts<\/a>"],[66.666666666667,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#575\">Uri::filterScheme<\/a>"],[66.666666666667,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#591\">Uri::filterHost<\/a>"],[0,4,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#607\">Uri::filterPort<\/a>"],[66.666666666667,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#623\">Uri::removeDefaultPort<\/a>"],[83.333333333333,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#639\">Uri::filterPath<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#661\">Uri::filterQueryAndFragment<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#674\">Uri::rawurlencodeMatchZero<\/a>"],[0,10,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/Uri.php.html#679\">Uri::validateState<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AbstractGrant.php.html#41\">AbstractGrant::getName<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AbstractGrant.php.html#48\">AbstractGrant::getRequiredRequestParameters<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AbstractGrant.php.html#56\">AbstractGrant::__toString<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AbstractGrant.php.html#69\">AbstractGrant::prepareRequestParameters<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AuthorizationCode.php.html#27\">AuthorizationCode::getName<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/AuthorizationCode.php.html#35\">AuthorizationCode::getRequiredRequestParameters<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php.html#36\">GrantFactory::setGrant<\/a>"],[100,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php.html#51\">GrantFactory::getGrant<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php.html#66\">GrantFactory::registerDefaultGrant<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php.html#83\">GrantFactory::isGrant<\/a>"],[40,3,"<a href=\"vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php.html#95\">GrantFactory::checkGrant<\/a>"],[100,6,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#102\">AbstractProvider::__construct<\/a>"],[75,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#138\">AbstractProvider::getAllowedClientOptions<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#156\">AbstractProvider::setGrantFactory<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#168\">AbstractProvider::getGrantFactory<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#179\">AbstractProvider::setRequestFactory<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#191\">AbstractProvider::getRequestFactory<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#202\">AbstractProvider::setHttpClient<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#214\">AbstractProvider::getHttpClient<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#226\">AbstractProvider::getState<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#238\">AbstractProvider::getBaseAuthorizationUrl<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#248\">AbstractProvider::getBaseAccessTokenUrl<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#256\">AbstractProvider::getResourceOwnerDetailsUrl<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#265\">AbstractProvider::getRandomState<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#280\">AbstractProvider::getDefaultScopes<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#288\">AbstractProvider::getScopeSeparator<\/a>"],[100,5,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#299\">AbstractProvider::getAuthorizationParameters<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#339\">AbstractProvider::getAuthorizationQuery<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#350\">AbstractProvider::getAuthorizationUrl<\/a>"],[0,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#366\">AbstractProvider::authorize<\/a>"],[80,3,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#388\">AbstractProvider::appendQuery<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#405\">AbstractProvider::getAccessTokenMethod<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#415\">AbstractProvider::getAccessTokenResourceOwnerId<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#426\">AbstractProvider::getAccessTokenQuery<\/a>"],[50,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#438\">AbstractProvider::verifyGrant<\/a>"],[60,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#454\">AbstractProvider::getAccessTokenUrl<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#472\">AbstractProvider::getAccessTokenBody<\/a>"],[100,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#483\">AbstractProvider::getAccessTokenOptions<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#500\">AbstractProvider::getAccessTokenRequest<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#516\">AbstractProvider::getAccessToken<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#543\">AbstractProvider::getRequest<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#557\">AbstractProvider::getAuthenticatedRequest<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#571\">AbstractProvider::createRequest<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#592\">AbstractProvider::getResponse<\/a>"],[66.666666666667,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#603\">AbstractProvider::getParsedResponse<\/a>"],[50,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#625\">AbstractProvider::parseJson<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#645\">AbstractProvider::getContentType<\/a>"],[26.666666666667,5,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#657\">AbstractProvider::parseResponse<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#697\">AbstractProvider::checkResponse<\/a>"],[40,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#708\">AbstractProvider::prepareAccessTokenResponse<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#729\">AbstractProvider::createAccessToken<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#742\">AbstractProvider::createResourceOwner<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#750\">AbstractProvider::getResourceOwner<\/a>"],[0,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#763\">AbstractProvider::fetchResourceOwnerDetails<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#787\">AbstractProvider::getDefaultHeaders<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#804\">AbstractProvider::getAuthorizationHeaders<\/a>"],[40,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php.html#817\">AbstractProvider::getHeaders<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/Exception\/IdentityProviderException.php.html#32\">IdentityProviderException::__construct<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Provider\/Exception\/IdentityProviderException.php.html#44\">IdentityProviderException::getResponseBody<\/a>"],[47.368421052632,9,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#60\">AccessToken::__construct<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#115\">AccessToken::isExpirationTimestamp<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#128\">AccessToken::getToken<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#138\">AccessToken::getRefreshToken<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#148\">AccessToken::getExpires<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#158\">AccessToken::getResourceOwnerId<\/a>"],[0,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#169\">AccessToken::hasExpired<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#185\">AccessToken::getValues<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#195\">AccessToken::__toString<\/a>"],[0,5,"<a href=\"vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php.html#206\">AccessToken::jsonSerialize<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/RequestFactory.php.html#37\">RequestFactory::getRequest<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/RequestFactory.php.html#54\">RequestFactory::parseOptions<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/RequestFactory.php.html#75\">RequestFactory::getRequestWithOptions<\/a>"],[0,3,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/FqsenResolver.php.html#22\">FqsenResolver::resolve<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/FqsenResolver.php.html#42\">FqsenResolver::isFqsen<\/a>"],[0,3,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/FqsenResolver.php.html#57\">FqsenResolver::resolvePartialStructuralElementName<\/a>"],[100,2,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#65\">TypeResolver::__construct<\/a>"],[0,10,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#89\">TypeResolver::resolve<\/a>"],[0,3,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#137\">TypeResolver::addKeyword<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#162\">TypeResolver::isTypedArray<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#174\">TypeResolver::isKeyword<\/a>"],[0,2,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#186\">TypeResolver::isPartialStructuralElementName<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#198\">TypeResolver::isFqsen<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#210\">TypeResolver::isCompoundType<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#222\">TypeResolver::isNullableType<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#235\">TypeResolver::resolveTypedArray<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#247\">TypeResolver::resolveKeyword<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#262\">TypeResolver::resolveTypedObject<\/a>"],[0,2,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#275\">TypeResolver::resolveCompoundType<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/TypeResolver.php.html#294\">TypeResolver::resolveNullableType<\/a>"],[72.727272727273,6,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/Context.php.html#44\">Context::__construct<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/Context.php.html#69\">Context::getNamespace<\/a>"],[0,1,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/Context.php.html#80\">Context::getNamespaceAliases<\/a>"],[85.714285714286,3,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/ContextFactory.php.html#41\">ContextFactory::createFromReflector<\/a>"],[100,14,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/ContextFactory.php.html#67\">ContextFactory::createForNamespace<\/a>"],[100,4,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/ContextFactory.php.html#120\">ContextFactory::parseNamespace<\/a>"],[100,3,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/ContextFactory.php.html#142\">ContextFactory::parseUseStatement<\/a>"],[100,4,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/ContextFactory.php.html#167\">ContextFactory::skipToNextStringOrNamespaceSeparator<\/a>"],[93.333333333333,9,"<a href=\"vendor\/phpdocumentor\/type-resolver\/src\/Types\/ContextFactory.php.html#182\">ContextFactory::extractUseStatement<\/a>"],[100,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#169\">Assert::string<\/a>"],[100,1,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#179\">Assert::stringNotEmpty<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#185\">Assert::integer<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#195\">Assert::integerish<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#205\">Assert::float<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#215\">Assert::numeric<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#225\">Assert::natural<\/a>"],[40,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#235\">Assert::boolean<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#245\">Assert::scalar<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#255\">Assert::object<\/a>"],[0,6,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#265\">Assert::resource<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#283\">Assert::isCallable<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#293\">Assert::isArray<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#303\">Assert::isTraversable<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#321\">Assert::isArrayAccessible<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#331\">Assert::isCountable<\/a>"],[40,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#341\">Assert::isIterable<\/a>"],[33.333333333333,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#351\">Assert::isInstanceOf<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#362\">Assert::notInstanceOf<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#373\">Assert::isInstanceOfAny<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#388\">Assert::isEmpty<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#398\">Assert::notEmpty<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#408\">Assert::null<\/a>"],[50,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#418\">Assert::notNull<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#427\">Assert::true<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#437\">Assert::false<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#447\">Assert::eq<\/a>"],[40,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#458\">Assert::notEq<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#468\">Assert::same<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#479\">Assert::notSame<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#489\">Assert::greaterThan<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#500\">Assert::greaterThanEq<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#511\">Assert::lessThan<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#522\">Assert::lessThanEq<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#533\">Assert::range<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#545\">Assert::oneOf<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#556\">Assert::contains<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#567\">Assert::notContains<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#578\">Assert::notWhitespaceOnly<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#588\">Assert::startsWith<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#599\">Assert::startsWithLetter<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#618\">Assert::endsWith<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#629\">Assert::regex<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#639\">Assert::alpha<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#654\">Assert::digits<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#669\">Assert::alnum<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#684\">Assert::lower<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#699\">Assert::upper<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#714\">Assert::length<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#725\">Assert::minLength<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#736\">Assert::maxLength<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#747\">Assert::lengthBetween<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#761\">Assert::fileExists<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#773\">Assert::file<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#785\">Assert::directory<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#797\">Assert::readable<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#807\">Assert::writable<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#817\">Assert::classExists<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#827\">Assert::subclassOf<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#838\">Assert::implementsInterface<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#849\">Assert::propertyExists<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#859\">Assert::propertyNotExists<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#869\">Assert::methodExists<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#879\">Assert::methodNotExists<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#889\">Assert::keyExists<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#899\">Assert::keyNotExists<\/a>"],[0,2,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#909\">Assert::count<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#918\">Assert::minCount<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#929\">Assert::maxCount<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#940\">Assert::countBetween<\/a>"],[0,4,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#954\">Assert::uuid<\/a>"],[0,6,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#972\">Assert::throws<\/a>"],[64.285714285714,5,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#999\">Assert::__callStatic<\/a>"],[0,8,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#1028\">Assert::valueToString<\/a>"],[100,2,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#1061\">Assert::typeToString<\/a>"],[0,3,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#1066\">Assert::strlen<\/a>"],[100,1,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#1079\">Assert::reportInvalidArgument<\/a>"],[0,1,"<a href=\"vendor\/webmozart\/assert\/src\/Assert.php.html#1084\">Assert::__construct<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#23\">MessageTrait::getProtocolVersion<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#28\">MessageTrait::withProtocolVersion<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#39\">MessageTrait::getHeaders<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#44\">MessageTrait::hasHeader<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#49\">MessageTrait::getHeader<\/a>"],[0,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#62\">MessageTrait::getHeaderLine<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#67\">MessageTrait::withHeader<\/a>"],[0,3,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#86\">MessageTrait::withAddedHeader<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#107\">MessageTrait::withoutHeader<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#123\">MessageTrait::getBody<\/a>"],[0,2,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#132\">MessageTrait::withBody<\/a>"],[83.333333333333,4,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#143\">MessageTrait::setHeaders<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#177\">MessageTrait::trimHeaderValues<\/a>"],[100,1,"<a href=\"vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php.html#179\">MessageTrait::anonymous function<\/a>"],[0,9,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/ArrayAccessorTrait.php.html#30\">ArrayAccessorTrait::getValueByKey<\/a>"],[0,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/BearerAuthorizationTrait.php.html#30\">BearerAuthorizationTrait::getAuthorizationHeaders<\/a>"],[100,1,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/QueryBuilderTrait.php.html#29\">QueryBuilderTrait::buildQueryString<\/a>"],[40,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/RequiredParameterTrait.php.html#32\">RequiredParameterTrait::checkRequiredParameter<\/a>"],[100,2,"<a href=\"vendor\/league\/oauth2-client\/src\/Tool\/RequiredParameterTrait.php.html#50\">RequiredParameterTrait::checkRequiredParameters<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
